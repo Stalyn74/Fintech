@@ -6,9 +6,9 @@
           <li v-for="item in menuItems" :key="item.section" :class="{ active: isActive(item.section) }">
             <template v-if="item.submenu">
               <a href="#" @click.prevent="toggleSubmenu(item.section)">
-                <i :class="`fa-solid ${item.icon}`"></i>
+                <i :class="`fa ${item.icon}`"></i>
                 <span>{{ item.name }}</span>
-                <i class="fa-solid fa-chevron-right" :class="{ 'rotate-180': isSubmenuOpen(item.section) }"></i>
+                <i class="fa fa-chevron-right" :class="{ 'rotate-180': isSubmenuOpen(item.section) }"></i>
               </a>
               <ul v-show="isSubmenuOpen(item.section)">
                 <li v-for="subItem in item.submenu" :key="subItem.section">
@@ -20,13 +20,19 @@
             </template>
             <template v-else>
               <a href="#" @click.prevent="navigateTo(item.section)">
-                <i :class="`fa-solid ${item.icon}`"></i>
+                <i :class="`fa ${item.icon}`"></i>
                 <span>{{ item.name }}</span>
               </a>
             </template>
           </li>
         </ul>
       </nav>
+      <div class="sidebar-footer">
+        <a href="#" @click.prevent="navigateTo('cerrar-sesion')">
+          <i class="fa fa-sign-out-alt"></i>
+          <span>Cerrar Sesión</span>
+        </a>
+      </div>
     </aside>
     <main class="content">
       <router-view></router-view>
@@ -97,7 +103,7 @@ const isActive = (section) => {
 
 .menu {
   width: 250px;
-  background-color: #001529;
+  background-color: #6a0dad; /* Cambia el color de fondo a morado */
   color: #fff;
   padding: 20px;
   position: absolute;
@@ -105,6 +111,9 @@ const isActive = (section) => {
   top: 0;
   height: 100%;
   transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Asegúrate de que los elementos dentro del sidebar se coloquen en columna */
+  justify-content: space-between; /* Espacia los elementos dentro del sidebar */
 }
 
 #app.menu-open .menu {
@@ -175,5 +184,29 @@ const isActive = (section) => {
 
 .rotate-180 {
   transform: rotate(180deg);
+}
+
+.sidebar-footer {
+  margin-top: auto; /* Coloca el footer al final del sidebar */
+  padding-top: 20px;
+  border-top: 1px solid #fff; /* Línea de separación */
+}
+
+.sidebar-footer a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-footer a:hover {
+  background-color: #1890ff;
+}
+
+.sidebar-footer a i {
+  margin-right: 10px;
 }
 </style>

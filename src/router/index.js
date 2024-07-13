@@ -17,7 +17,6 @@ const routes = [
         name: 'factura',
         component: Factura
     },
-
     {
         path: '/inicio',
         name: 'inicio',

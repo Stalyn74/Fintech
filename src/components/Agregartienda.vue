@@ -61,6 +61,6 @@ p {
   padding: 10px 20px; 
   border: none; 
   cursor: pointer;
-  margin: 20px 135px;
+  margin-left: 300px;
 }
 </style>

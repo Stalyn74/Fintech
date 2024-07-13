@@ -1,5 +1,5 @@
 <template>
-    <h1 class="titulo">Lista de tiendas</h1>
+    <div class="titulo"><h1>Lista de tiendas</h1></div>
     <div class="cuadro">
         <div class="titulo">
             <h2>El carrito lleno</h2>

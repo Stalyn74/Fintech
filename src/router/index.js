@@ -31,7 +31,12 @@ const routes = [
         path: '/listatienda',
         name: 'listatienda',
         component: Listatiendas
-    }
+    },
+    { 
+        path: '/Agregartienda',
+        name: 'Agregartienda',
+        component: Agregartienda
+    },
 ];
 
 const router = createRouter({

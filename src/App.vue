@@ -60,9 +60,15 @@ const menuItems = [
       
     ]
   },
-  { name: 'Agregar Clientes', icon: 'fa-clipboard-list', section: 'resultados' },
+  { name: 'Gestion de clientes', icon: 'fa-chart-bar', section: 'clientes', submenu: [
+      { name: 'Lista de clientes', section: 'lista-clientes' },
+      { name: 'Agregar Cliente', section: 'agregar-clientes' },    
+    ]
+  },
+
   { name: 'Cerrar Sesión', icon: 'fa-sign-out-alt', section: 'cerrar-sesion' }
-]
+];
+
 
 const isMenuOpen = ref(false);
 const openSubmenus = ref([]);

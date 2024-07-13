@@ -60,7 +60,12 @@ const menuItems = [
       
     ]
   },
-  { name: 'Agregar Clientes', icon: 'fa-clipboard-list', section: 'resultados' },
+  { name: 'Gestion de clientes', icon: 'fa-chart-bar', section: 'factura', submenu: [
+      { name: 'Lista de clientes', section: 'estadisticas-equipo' },
+      { name: 'Agregar Cliente', section: 'estadisticas-equipo' },    
+    ]
+  },
+
   { name: 'Cerrar Sesión', icon: 'fa-sign-out-alt', section: 'cerrar-sesion' }
 ]
 

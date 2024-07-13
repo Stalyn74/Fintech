@@ -4,6 +4,7 @@ import HomeView from '../views/Home.vue';
 import Factura from '../components/Factura.vue';
 import Inicio from '../components/Inicio.vue';
 import Agregartienda from '../components/Agregartienda.vue';
+import Listatiendas from '../components/Listatiendas.vue';
 
 const routes = [
     {
@@ -26,6 +27,11 @@ const routes = [
         path: '/agregartienda',
         name: 'agregartienda',
         component: Agregartienda
+    },
+    {
+        path: '/listatienda',
+        name: 'listatienda',
+        component: Listatiendas
     }
 ];
 

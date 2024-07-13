@@ -60,14 +60,15 @@ const menuItems = [
       
     ]
   },
-  { name: 'Gestion de clientes', icon: 'fa-chart-bar', section: 'factura', submenu: [
-      { name: 'Lista de clientes', section: 'estadisticas-equipo' },
-      { name: 'Agregar Cliente', section: 'estadisticas-equipo' },    
+  { name: 'Gestion de clientes', icon: 'fa-chart-bar', section: 'clientes', submenu: [
+      { name: 'Lista de clientes', section: 'lista-clientes' },
+      { name: 'Agregar Cliente', section: 'agregar-clientes' },    
     ]
   },
 
   { name: 'Cerrar Sesión', icon: 'fa-sign-out-alt', section: 'cerrar-sesion' }
-]
+];
+
 
 const isMenuOpen = ref(false);
 const openSubmenus = ref([]);

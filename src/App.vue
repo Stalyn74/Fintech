@@ -49,21 +49,20 @@ const route = useRoute();
 
 const menuItems = [
   { name: 'Inicio', icon: 'fa-home', section: 'inicio' },
-  { name: 'Encuentros', icon: 'fa-futbol', section: 'encuentros' },
-  { name: 'Gestión', icon: 'fa-cogs', section: 'gestion', submenu: [
-      { name: 'Gestión de Equipos', section: 'equipos' },
-      { name: 'Gestión de Jugadores', section: 'jugadores' }
+  { name: 'Agregar Tienda', icon: 'fa-futbol', section: 'agregar tienda' },
+  { name: 'Listado de Tiendas', icon: 'fa-cogs', section: 'Listado de tiendas', submenu: [
+      { name: 'Historial de Facturas', section: 'Historial de facturas' },
+      { name: 'Agregar Clientes', section: 'Agregar Clientes' }
     ]
   },
-  { name: 'Estadísticas', icon: 'fa-chart-bar', section: 'estadisticas', submenu: [
-      { name: 'Estadísticas de Equipos', section: 'estadisticas-equipo' },
-      { name: 'Estadísticas de Jugadores', section: 'estadisticas-jugador' },
-      { name: 'Estadísticas de Partidos', section: 'estadisticas-partidos' }
+  { name: 'Factura', icon: 'fa-chart-bar', section: 'factura', submenu: [
+      { name: 'Historial de Factura', section: 'estadisticas-equipo' },
+      
     ]
   },
-  { name: 'Registro de Resultados', icon: 'fa-clipboard-list', section: 'resultados' },
+  { name: 'Agregar Clientes', icon: 'fa-clipboard-list', section: 'resultados' },
   { name: 'Cerrar Sesión', icon: 'fa-sign-out-alt', section: 'cerrar-sesion' }
-];
+]
 
 const isMenuOpen = ref(false);
 const openSubmenus = ref([]);
@@ -103,7 +102,7 @@ const isActive = (section) => {
 
 .menu {
   width: 250px;
-  background-color: #6a0dad; /* Cambia el color de fondo a morado */
+  background-color: #010208; /* Cambia el color de fondo a morado */
   color: #fff;
   padding: 20px;
   position: absolute;

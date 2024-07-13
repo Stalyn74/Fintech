@@ -49,13 +49,13 @@ const route = useRoute();
 
 const menuItems = [
   { name: 'Inicio', icon: 'fa-home', section: 'inicio' },
-  { name: 'Agregar Tienda', icon: 'fa-futbol', section: 'agregar tienda' },
-  { name: 'Listado de Tiendas', icon: 'fa-cogs', section: 'Listado de tiendas', submenu: [
+  { name: 'Agregar Tienda', icon: 'fa fa-plus', section: 'agregar tienda' },
+  { name: 'Listado de Tiendas', icon: 'fa fa-list', section: 'Listado de tiendas', submenu: [
       { name: 'Historial de Facturas', section: 'Historial de facturas' },
       { name: 'Agregar Clientes', section: 'Agregar Clientes' }
     ]
   },
-  { name: 'Factura', icon: 'fa-chart-bar', section: 'factura', submenu: [
+  { name: 'Factura', icon: 'fa fa-book', section: 'factura', submenu: [
       { name: 'Historial de Factura', section: 'estadisticas-equipo' },
       
     ]

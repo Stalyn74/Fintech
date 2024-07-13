@@ -103,7 +103,7 @@ const isActive = (section) => {
 
 .menu {
   width: 250px;
-  background-color: #6a0dad; /* Cambia el color de fondo a morado */
+  background-color: #636363; /* Cambia el color de fondo a morado */
   color: #fff;
   padding: 20px;
   position: absolute;
